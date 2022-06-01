@@ -22,14 +22,9 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask flask-wtf pytest pytest-cov
-              
-      #- name: Unit Test
-      #  run: python -m unittest -v test
 
       -name: Pytest
        run: coverage run --source=app -m pytest test.py && coverage report -m && coverage xml -i
-
-
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master

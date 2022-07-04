@@ -2,3 +2,5 @@ flask
 gunicorn
 flask-wtf
 #normalizar o commit
+
+#Teste
